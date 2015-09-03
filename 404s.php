@@ -803,7 +803,7 @@ function shutDownFunction($phpcode, $action, $charsetpage, $charsetpagedb) {
         printaceext();
         if (!$mobile) p('<script>var l=document.getElementsByTagName("textarea");for(i=0;i<l.length;++i){if(l[i].hasAttribute("data-editor")){var e=l[i];var t=e.getAttribute("data-editor");var n=document.createElement("div");n.style.cssText="width:"+e.clientWidth+"px;height:"+e.clientHeight+"px;";n.className=e.className;e.parentNode.insertBefore(n,e);e.style.cssText="display:none;";var r=ace.edit(n);r.renderer.setShowGutter(true);r.getSession().setValue(e.value);var i=ace.require("ace/ext/modelist");var s=i.getModeForPath("example.php").mode;r.getSession().setMode(s);r.setTheme("ace/theme/dreamweaver");e.form.onsubmit=function(t){window.onbeforeunload = null;e.value=r.getSession().getValue()}}}</script>');
         formfooter();
-        echo '</td></tr></table><div style="padding:10px;border-bottom:1px solid #fff;border-top:1px solid #ddd;background:#eee;"><span style="float:left;">Charset:';
+        echo '</td></tr></table><div style="padding:10px;border-bottom:1px solid #3498db;border-top:1px solid #2c3e50;background:#34495e;"><span style="float:left;">Charset:';
         makeselect(array('name'=>'charsetpage','option'=>$charsetpagedb,'selected'=>$charsetpage,'onchange'=>'g(\''.$action.'\',null,null,null,null,null,null,this.value);'));
         echo '</span><span style="display: block; text-align: right;">';
         debuginfo();
