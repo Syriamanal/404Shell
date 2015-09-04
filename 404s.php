@@ -1076,7 +1076,7 @@ function shownav(e){
 	$(\'pathnav\').style.display = "";
 }
 </script>
-<div style="background:#eee;margin-bottom:10px;">
+<div style="background:#34495e;margin-bottom:10px;">
 	<table id="pathnav" width="100%" border="0" cellpadding="5" cellspacing="0">
 		<tr>
 			<td width="100%">';
@@ -3236,7 +3236,7 @@ maketext(array(
 }
 ;
 echo '</td></tr></table>
-<div style="padding:10px;border-bottom:1px solid #fff;border-top:1px solid #ddd;background:#eee;">
+<div style="padding:10px;border-bottom:1px solid #fff;border-top:1px solid #ddd;background:#34495e;">
 <span style="float:left;">Charset:';
 			makeselect(array('name'=>'charsetpage','option'=>$charsetpagedb,'selected'=>$charsetpage,'onchange'=>'g(\''.$action.'\',null,null,null,null,null,null,this.value);'));
 echo '</span>
